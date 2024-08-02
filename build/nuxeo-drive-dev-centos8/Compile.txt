@@ -1,0 +1,10 @@
+1. mkdir /work/nuxeo-drive
+2. copy and extract deploy-dir.tar.xz to /work/nuxeo-drive
+3. mkdir /work/nuxeo/source
+4. git clone https://github.com/nuxeo/nuxeo-drive.git to /work/nuxeo-drive/source
+5. cd /work/nuxeo-drive/source/nuxeo-drive
+6. git checkout release-5.4.1
+7. copy and extract venv.tar.xz to /work/nuxeo-drive/source/nuxeo-drive
+8. export WORKSPACE=/work/nuxeo-drive
+   export WORKSPACE_DRIVE=/work/nuxeo-drive/source/nuxeo-drive
+9. sh tools/linux/deploy_ci_agent.sh --build
